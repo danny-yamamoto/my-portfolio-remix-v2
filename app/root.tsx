@@ -8,9 +8,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import stylesUrl from "./index.css"
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  { rel: "stylesheet", href: stylesUrl},
+  { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" },
 ];
 
 export default function App() {
