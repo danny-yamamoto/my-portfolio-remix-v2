@@ -1,5 +1,12 @@
 import { Link, Outlet } from "@remix-run/react";
 import { Footer } from "~/components/Footer";
+import stylesUrl from "../index.css"
+import type { LinksFunction } from "@remix-run/cloudflare";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesUrl},
+  { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" },
+];
 
 // route is here.
 export default function PortfolioRoute() {
