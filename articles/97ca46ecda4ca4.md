@@ -11,15 +11,15 @@ published: false
 ## Background
 現職の Frontend は、Vue/Nuxt、React/Gatsby など複数の構成が存在します。
 
-今後を見据えた場合、どういう選択肢が最適なのか考えた場合、Next.js が最初の案です。
-数ある Framework の中で最もユーザーが多く、コミュニティーが活発だと思います。
-一方で、Next.js を動かす場合、Vercel 以外だと、恩恵を受けられないことが多いと思います。他の platform で使われるとNext.js/Vercel としても開発する incentive がない。
+現在のデファクトと言える Next.js は、数ある Framework の中で最もユーザーが多く、コミュニティーが活発です。
+一方で、Next.js を Vercel 以外、例えば Cloud Run で動かす場合、恩恵を受けられないことがあります。
+また、Vercel としては他の platform で使われると開発する incentive がありません。
 
-Next.js の次は？と問われると、monetize がはっきりしている Framework が妥当な選択肢だと思います。
+その他の Framework を問われると、monetize がはっきりしているものが妥当な選択肢だと思います。
 
 そこで、Shopifyと提携した Remix です。
 
-v2 が release されたため、大きな変更の1つである flat routes について学びます。
+v2 が release されたため、大きな変更の1つである flat routes とその他の変更点について調べます。
 
 ## Overview
 僕は、Remix v1 で future flags を有効にしたため、flat routes は経験しました。

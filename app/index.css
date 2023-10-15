@@ -27,10 +27,9 @@ body {
     font-size: 16px;
     text-decoration: none;
     width: min-content;
-}
-
-.contents-button a {
-    text-decoration: none;
+    .a {
+        text-decoration: none;
+    }
 }
 
 .contents-route {
@@ -62,8 +61,7 @@ footer {
     font-size: 1.5rem;
     margin-left: 10px;
     text-decoration: none;
-}
-
-.social-links a:hover {
-    color: #0077cc;
+    a:hover {
+        color: #0077cc;
+    }
 }
