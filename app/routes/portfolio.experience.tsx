@@ -1,8 +1,9 @@
 import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
-import { getExperience } from "~/utils/experience.server";
+import { getExperience } from "../experience.server";
 
-export const loader = async () => {
+export async function loader() {
+//export const loader = async () => {
     const experience = await getExperience()
     return json(experience)
 } 

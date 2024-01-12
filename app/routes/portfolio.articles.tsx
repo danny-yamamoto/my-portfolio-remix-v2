@@ -1,6 +1,6 @@
 import { json } from "@remix-run/cloudflare";
 import { Link, useLoaderData } from "@remix-run/react";
-import { getArticles } from "~/utils/articles.server"
+import { getArticles } from "../articles.server";
 
 export const loader = async () => {
     const articles = await getArticles(20);

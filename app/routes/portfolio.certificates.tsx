@@ -1,8 +1,9 @@
 import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
-import { getCertificates } from "~/utils/certificates.server";
+import { getCertificates } from "../certificates.server";
 
-export const loader = async () => {
+export async function loader() {
+//export const loader = async () => {
     const certificates = await getCertificates()
     return json(certificates)
 }
