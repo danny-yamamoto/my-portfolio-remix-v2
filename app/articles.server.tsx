@@ -1,4 +1,4 @@
-import type { IArticles } from "../types";
+import type { IArticles } from "./types";
 
 export async function getArticles(count: number): Promise<IArticles[]> {
     const response = await fetch(`https://qiita.com/api/v2/users/daisuke-yamamoto/items?page=1&per_page=${count}`);
