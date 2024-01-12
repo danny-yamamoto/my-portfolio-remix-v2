@@ -8,7 +8,8 @@
     "dev": "remix dev --manual -c \"npm run start\"",
     "start": "wrangler pages dev --compatibility-date=2023-06-21 ./public",
     "typecheck": "tsc",
-    "pages:deploy": "npm run build && wrangler pages deploy ./public"
+    "pages:deploy": "npm run build && wrangler pages deploy ./public",
+    "dev:ladle": "npx ladle serve"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.0.1",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230518.0",
+    "@ladle/react": "^4.0.2",
     "@remix-run/dev": "^2.0.1",
     "@remix-run/eslint-config": "^2.0.1",
     "@types/react": "^18.2.20",
